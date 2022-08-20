@@ -1,0 +1,13 @@
+.button {
+  background-color: lawngreen;
+  color: var(--dark-grey);
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.button:active {
+  background-color: green;
+}

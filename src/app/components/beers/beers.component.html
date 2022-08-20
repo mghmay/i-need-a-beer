@@ -1,0 +1,29 @@
+<div class="beers-container" *ngIf="beers.length">
+  <h2 class="beers-title">{{ beer.name }}</h2>
+  <p class="beers-tagline">{{ beer.tagline }}</p>
+  <img
+    src="{{ beer.image_url }}"
+    *ngIf="beer.image_url"
+    alt="a beer"
+    class="beers-img"
+  />
+  <img
+    src="../../../assets/images/mystery-beer.png"
+    *ngIf="!beer.image_url"
+    alt="a mystery beer"
+    class="beers-img"
+  />
+  <h3 class="beers-first-brewed-title">First brewed</h3>
+  <p class="beers-first-brewed">{{ beer.first_brewed }}</p>
+  <h3 class="beers-food-pairings-title">Best paired with</h3>
+  <ul class="beers-food-pairings">
+    <li *ngFor="let foodPairing of beer.food_pairing">{{ foodPairing }}</li>
+  </ul>
+  <h3 class="beers-description-title">Description</h3>
+  <p class="beers-description">
+    {{ beer.description }}
+  </p>
+</div>
+<div class="beers-button">
+  <app-button (buttonClick)="getRandomBeer()"></app-button>
+</div>
