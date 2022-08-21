@@ -2,7 +2,7 @@
 
 An app for when you really need that beer.
 
-Check it out here: [I need a beer](i-need-a-beer.netlify.app)
+Check it out here: [I need a beer](https://i-need-a-beer.netlify.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
