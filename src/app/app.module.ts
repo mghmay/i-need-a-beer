@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BeersComponent } from './components/beers/beers.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SearchComponent } from './components/search/search.component';
-import { UiService } from './services/ui.service';
 import { HttpService } from './services/http.service';
 
 const routes: Routes = [
@@ -31,7 +30,7 @@ const routes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [UiService, HttpService],
+  providers: [HttpService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,9 +1,8 @@
 import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { HttpService } from 'src/app/services/http.service';
-import { UiService } from 'src/app/services/ui.service';
 import { Beer } from '../../Beer';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-beers',
@@ -15,18 +14,19 @@ export class BeersComponent implements OnInit, OnDestroy {
   routeSub: Subscription = new Subscription();
   beers: Beer[] = [];
   beer: Beer = {} as Beer;
+  params: string = '';
 
   constructor(
     private httpService: HttpService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.routeSub = this.activatedRoute.params.subscribe((params) => {
-      console.log(params);
       if (params['searchTerm']) {
+        this.params = params['searchTerm'];
         this.searchForABeer(params['searchTerm']);
-        console.log('searching');
       }
     });
   }
