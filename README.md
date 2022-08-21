@@ -1,10 +1,12 @@
 # INeedABeer
 
+An app for when you really need that beer.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4600/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -28,6 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # i-need-a-beer
 
-For when you really need that beer.
 
-> > > > > > > 0dc768d6d23d600ff9867ef09ee9fdfd4a2ddde7
