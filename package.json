@@ -20,7 +20,7 @@
     "@angular/router": "^14.1.0",
     "cross-env": "^7.0.3",
     "get-google-fonts": "^1.2.2",
-    "json-server": "^0.17.0",
+    "json-server": "^0.17.1",
     "rxjs": "~7.5.0",
     "set-default-browser": "^1.1.2",
     "tslib": "^2.3.0",
