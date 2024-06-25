@@ -1,3 +1,5 @@
+I'm archiving this project as of June 2024 because the underlying [punk-api](https://github.com/sammdec/punkapi/) has been archived by its owner.
+
 # INeedABeer
 
 An app for when you really need that beer.
